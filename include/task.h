@@ -9,13 +9,8 @@
 #include <memory>
 #include <random>
 #include <vector>
-
-// Workaround cpplint
-#define threadInc "thread";
-#define mutexInc "mutex";
-
-#include threadInc
-#include mutexInc
+#include <thread>
+#include <mutex>
 
 class Shop {
  private:

@@ -82,12 +82,12 @@ TEST(TEST4, getAverageCashBoxWorkTime) {
             aShop.getAverageCashBoxWorkTime() > aMinorTime, true);
 }
 
-TEST(TEST4, getAverageBuyerExpectedTime) {
+TEST(TEST5, getAverageBuyerExpectedTime) {
   int aProductsMax = 10;
   int aMaxPrice = 40;
   int aMaxBuyers = 50;
   int aQueueLenght = 1;
-  int aFlowBuyersIntensity = 0;
+  int aFlowBuyersIntensity = 50;
   int aSellersSpeed = 50;
   int aAverageNumber = 5;
   int aCashBoxCount = 50;

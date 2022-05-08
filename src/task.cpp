@@ -76,9 +76,10 @@ void Shop::serveQueue(SPBuyersQueue theQueueBuyers) {
     myBuyerCounter++;
   }
 
-  [[maybe_unused]] auto removeIterator =
-    std::remove(begin(myQueueBuyersVector), end(myQueueBuyersVector),
-      theQueueBuyers);
+  //TODO: Try to fix this expression to g++ complier.
+  //[[maybe_unused]] auto removeIterator =
+  //  std::remove(myQueueBuyersVector.begin(), myQueueBuyersVector.end(),
+  //    theQueueBuyers);
 }
 
 void Shop::serveAllShop() {
