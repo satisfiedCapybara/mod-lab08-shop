@@ -15,7 +15,7 @@ target_include_directories(${PROJECT_NAME}.info
   PUBLIC ${CMAKE_CURRENT_BINARY_DIR}
          ${${PROJECT_NAME}_SOURCE_DIR}/include)
 target_link_libraries(${PROJECT_NAME}.info
-  ${PROJECT_NAME})
+  ${PROJECT_NAME} pthread)
 
 
 install(TARGETS ${PROJECT_NAME}

@@ -12,7 +12,7 @@ add_executable(${PROJECT_NAME}.test
 
 target_include_directories(${PROJECT_NAME}.test
   PUBLIC ${${PROJECT_NAME}_SOURCE_DIR}/include)
-target_link_libraries(${PROJECT_NAME}.test ${PROJECT_NAME} gtest_main)
+target_link_libraries(${PROJECT_NAME}.test ${PROJECT_NAME} gtest_main pthread)
 
 target_compile_definitions(${PROJECT_NAME}.test
   PRIVATE TEST_DIR="${CMAKE_CURRENT_LIST_DIR}/test")
